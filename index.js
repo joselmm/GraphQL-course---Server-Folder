@@ -3,7 +3,7 @@ const schema = require("./schema/schema");
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const PORT = 65247 || process.env.PORT;
+const PORT = process.env.PORT || 65247;
 const cors = require("cors");
 
 app.use(cors());
